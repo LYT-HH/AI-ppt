@@ -1,0 +1,8 @@
+# 安装依赖
+pip install   所缺少的库
+
+# 配置API密钥
+# 在代码中设置您的DeepSeek API密钥
+
+运行应用
+bashstreamlit run ai_ppt_generator.py
