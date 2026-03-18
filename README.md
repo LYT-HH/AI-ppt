@@ -46,9 +46,6 @@ bash# 克隆项目
 git clone https://github.com/yourusername/ai-ppt-generator.git
 cd ai-ppt-generator
 
-# 安装依赖
-pip install -r requirements.txt
-
 # 配置API密钥
 # 在代码中设置您的DeepSeek API密钥
 
