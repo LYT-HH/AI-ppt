@@ -6,3 +6,5 @@ pip install   所缺少的库
 
 运行应用
 bashstreamlit run ai_ppt_generator.py
+
+现在版本还是初版，效果还未完善
