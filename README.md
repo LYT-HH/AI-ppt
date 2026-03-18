@@ -1,143 +1,146 @@
 # AI-ppt
-📋 Project Overview
-AI PPT Generator is an intelligent presentation generation tool powered by artificial intelligence technology that can instantly transform user ideas into professional-grade slides. This project combines DeepSeek large language models, python-pptx library, and Streamlit framework to achieve full-process automation from topic input to PPT file generation.
-✨ Core Features
-1. Intelligent Content Generation
+AI PPT智能生成器 - GitHub README
+📋 项目简介
+AI PPT智能生成器是一个基于人工智能技术的智能演示文稿自动生成工具，能够将用户的想法瞬间转化为专业级的幻灯片。本项目结合了DeepSeek大语言模型、python-pptx库和Streamlit框架，实现了从主题输入到PPT文件生成的全流程自动化。
+✨ 核心功能
+1. 智能内容生成
 
-AI-Driven Outline Generation: Simply input a topic, and AI automatically generates a complete PPT outline including cover page, table of contents structure, core content for each section, and summary page.
-Structured Content Output: Based on DeepSeek API, generates professional content suitable for various scenarios including business reports, academic presentations, product introductions, and more.
-Multi-Style Adaptation: Supports multiple styles including business reporting, academic speeches, product introductions, project proposals, and educational training.
+AI驱动大纲生成：只需输入主题，AI就能自动生成完整的PPT大纲，包括封面页、目录结构、各章节核心内容和总结页。
+结构化内容输出：基于DeepSeek API生成符合商业汇报、学术演讲、产品介绍等多种场景的专业内容。
+多风格适配：支持商业汇报、学术演讲、产品介绍、项目提案、教育培训等多种风格选择。
 
-2. Custom Template Support
+2. 自定义模板支持
 
-Template Upload Function: Users can upload their own PPT template files (.pptx format), and the system will generate PPTs based on user templates.
-Smart Placeholder Filling: Automatically identifies title and content areas in templates, filling AI-generated content into corresponding placeholders.
-Default Template System: Built-in various professional templates to meet different scenario requirements, ensuring high-quality PPT generation even without custom templates.
+模板上传功能：用户可上传自己的PPT模板文件（.pptx格式），系统将基于用户模板生成PPT。
+智能占位符填充：自动识别模板中的标题和内容区域，将AI生成的内容填充到对应占位符中。
+默认模板系统：内置多种专业模板，满足不同场景需求，确保即使没有自定义模板也能生成高质量PPT。
 
-3. Data Visualization Integration
+3. 数据可视化集成
 
-Automatic Chart Generation: Automatically adds data visualization elements such as bar charts, line charts, and pie charts based on content.
-Intelligent Layout Optimization: Automatically adjusts layout and design style to ensure visual dynamic balance.
-Real-time Preview Editing: Supports online custom editing, allowing modification of text content, styles, images, and other elements.
+自动图表生成：根据内容自动添加柱状图、折线图、饼图等数据可视化元素。
+智能排版优化：自动调整布局与设计风格，确保视觉动态平衡。
+实时预览编辑：支持在线自定义编辑，可修改文字内容、样式、图片等元素。
 
-🛠️ Technical Architecture
-Backend Technology Stack
+🛠️ 技术架构
+后端技术栈
 
-AI Engine: DeepSeek API (compatible with OpenAI format), used for content generation and structured processing
-PPT Processing: python-pptx library, supporting PPT file creation, editing, and template application
-Web Framework: Streamlit, providing interactive web interface and file upload functionality
-Asynchronous Processing: Supports multi-round dialogue state management, implementing rollback-capable workflows
+AI引擎：DeepSeek API（兼容OpenAI格式），用于内容生成和结构化处理
+PPT处理：python-pptx库，支持PPT文件的创建、编辑和模板应用
+Web框架：Streamlit，提供交互式Web界面和文件上传功能
+异步处理：支持多轮对话状态管理，实现可回退的工作流
 
-Frontend Features
+前端特性
 
-Responsive Interface: Modern web interface based on Streamlit
-Real-time Progress Display: Status feedback and progress bars during generation process
-File Management: Supports template upload, generation result download, and local storage
+响应式界面：基于Streamlit的现代化Web界面
+实时进度显示：生成过程中的状态反馈和进度条
+文件管理：支持模板上传、生成结果下载和本地存储
 
-🚀 Quick Start
-Environment Requirements
+🚀 快速开始
+环境要求
 
 Python 3.8+
-DeepSeek API Key
+DeepSeek API密钥
 
-Installation Steps
-bash# Clone the project
+安装步骤
+bash# 克隆项目
 git clone https://github.com/yourusername/ai-ppt-generator.git
 cd ai-ppt-generator
 
-# Install dependencies
+# 安装依赖
 pip install -r requirements.txt
 
-# Configure API key
-# Set your DeepSeek API key in the code
+# 配置API密钥
+# 在代码中设置您的DeepSeek API密钥
 
-Run the Application
+运行应用
 bashstreamlit run ai_ppt_generator.py
 
-Visit http://localhost:8501 to start using.
-📖 Usage Guide
-1. Basic Usage Process
+访问 http://localhost:8501 开始使用。
+📖 使用指南
+1. 基础使用流程
 
-Input Topic: Enter PPT topic in the web interface, such as "Future Development of Artificial Intelligence"
-Select Settings: Set parameters like number of slides, style preferences, etc.
-Upload Template (Optional): Upload custom PPT template file
-Generate PPT: Click the generate button and wait for AI processing to complete
-Download Results: Download the generated .pptx file for further editing
+输入主题：在Web界面中输入PPT主题，如"人工智能的未来发展"
+选择设置：设置幻灯片数量、风格偏好等参数
+上传模板（可选）：上传自定义PPT模板文件
+生成PPT：点击生成按钮，等待AI处理完成
+下载结果：下载生成的.pptx文件进行进一步编辑
 
-2. Template Usage Tips
+2. 模板使用技巧
 
-Template Preparation: It is recommended to design template files with clear placeholders in PowerPoint
-Compatibility: Supports all standard .pptx format templates, ensuring templates contain title and content placeholders
-Brand Consistency: Maintain corporate brand style consistency through custom templates
+模板准备：建议在PowerPoint中设计包含清晰占位符的模板文件
+兼容性：支持所有标准.pptx格式模板，确保模板包含标题和内容占位符
+品牌一致性：通过自定义模板保持企业品牌风格的一致性
 
-3. Content Optimization Suggestions
+3. 内容优化建议
 
-Clear Topic: Provide specific, clear topic descriptions for more accurate AI-generated content
-Style Matching: Choose appropriate PPT style based on usage scenario
-Post-Editing: Generated PPTs can be further beautified and adjusted in PowerPoint or WPS
+主题明确：提供具体、明确的主题描述，AI能生成更精准的内容
+风格匹配：根据使用场景选择合适的PPT风格
+后期编辑：生成的PPT可在PowerPoint或WPS中进一步美化和调整
 
-🔧 Configuration Instructions
-API Configuration
-python# Configure DeepSeek API in the code
+🔧 配置说明
+API配置
+python# 在代码中配置DeepSeek API
 DEEPSEEK_API_KEY = "your_api_key_here"
 DEEPSEEK_BASE_URL = "https://api.deepseek.com"
 
-Template Configuration
+模板配置
 
-Default template path: default_template.pptx
-User template save directory: user_templates/
-Supported template format: .pptx (standard PowerPoint format)
+默认模板路径：default_template.pptx
+用户模板保存目录：user_templates/
+支持模板格式：.pptx（标准PowerPoint格式）
 
-📊 Performance Characteristics
+📊 性能特点
 
-Generation Speed: Typically 10-30 seconds to complete generation of an 8-page PPT
-Content Quality: Based on DeepSeek large models, content is professional and accurate
-Template Compatibility: Supports custom templates, maintaining brand consistency
-Output Format: Standard .pptx format, compatible with Microsoft PowerPoint and WPS
+生成速度：通常10-30秒完成一份8页PPT的生成
+内容质量：基于DeepSeek大模型，内容专业准确
+模板兼容：支持自定义模板，保持品牌一致性
+输出格式：标准.pptx格式，兼容Microsoft PowerPoint和WPS
 
-🎯 Application Scenarios
-This project is suitable for various office and educational scenarios:
+🎯 适用场景
+本项目适用于多种办公和教育场景：
 
-Business Reporting: Enterprise quarterly reports, project proposals, market analysis
-Academic Presentations: Thesis defense, academic exchanges, research achievement displays
-Education and Training: Teaching courseware, training materials, knowledge sharing
-Product Introduction: Product launches, brand displays, marketing materials
+商业汇报：企业季度汇报、项目提案、市场分析
+学术演讲：论文答辩、学术交流、研究成果展示
+教育培训：教学课件、培训材料、知识分享
+产品介绍：产品发布、品牌展示、营销材料
 
-🔄 Development Roadmap
-Implemented Features
+🔄 开发路线图
+已实现功能
 
- Basic AI content generation
- Custom template support
- Data visualization charts
- Web interaction interface
+ 基础AI内容生成
+ 自定义模板支持
+ 数据可视化图表
+ Web交互界面
 
-Planned Features
+计划功能
 
- Multi-model support (integrating more AI models)
- Batch generation functionality
- Team collaboration support
- Mobile adaptation
+ 多模型支持（集成更多AI模型）
+ 批量生成功能
+ 团队协作支持
+ 移动端适配
 
-🤝 Contribution Guidelines
-Welcome to submit Issues and Pull Requests to help improve the project. Before submitting code, please ensure:
+🤝 贡献指南
+欢迎提交Issue和Pull Request来帮助改进项目。在提交代码前，请确保：
+代码符合PEP8规范
+添加适当的测试用例
+更新相关文档
 
-Code complies with PEP8 specifications
-Add appropriate test cases
-Update relevant documentation
+📄 许可证
+本项目采用MIT许可证。详见LICENSE文件。
+📞 支持与反馈
+如有问题或建议，请通过以下方式联系：
 
-📄 License
-This project uses the MIT License. See LICENSE file for details.
-📞 Support and Feedback
-For questions or suggestions, please contact through:
+GitHub Issues：提交问题报告
+Email：项目维护者邮箱
+文档：查看项目Wiki获取更多信息
 
-GitHub Issues: Submit problem reports
-Email: Project maintainer email
-Documentation: View project Wiki for more information
+🌟 致谢
+感谢以下开源项目和服务的支持：
 
-🌟 Acknowledgments
-Thanks to the following open-source projects and services for support:
+DeepSeek AI提供的内容生成能力
+python-pptx库的PPT处理功能
+Streamlit框架的Web界面支持
+所有贡献者和用户的反饋与支持
 
-DeepSeek AI for content generation capabilities
-python-pptx library for PPT processing functionality
-Streamlit framework for web interface support
-All contributors and users for feedback and support
+开始您的AI智能PPT制作之旅，体验科技带来的便利与高效！ 🎊
+最后更新：2026年3月18日
